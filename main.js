@@ -1,6 +1,7 @@
 import './style.css';
 import javascriptLogo from './javascript.svg';
 import viteLogo from '/vite.svg';
+import { environmentsComponents } from './src/concepts/01-environments';
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -18,4 +19,9 @@ document.querySelector('#app').innerHTML = `
   </div>
 `;
 
-console.log(`Hello Advanced`);
+// Para manejar las variables de entorno aremos lo siguiente:
+const element = document.querySelector('.card');
+
+// console.log(`Hello Advanced`);
+// Hacemos el llamado a la funcion "environmentsComponents" para el manejo de las variables de entorno.
+environmentsComponents( element );
